@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="/static/js/login.js" defer></script>
+</head>
+<body>
+{% if error != None %}
+    <div class="error">{{ error }}</div>
+{% endif %}
+    <h1>Login</h1>
+    <div class="login-box">
+         <form id="myForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Submit">
+         </form>
+    </div>
+</body>
+</html>
