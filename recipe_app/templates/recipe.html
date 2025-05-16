@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}
+    {{ recipe.name }}
+{% endblock %}
+{% block body %}
+    <h1 style="font-weight:normal; margin:1em; font-size:250%;"> {{ recipe.name }}</h1>
+    <h4 style="font-size:150%; margin-top: 0; padding-top:0;">By: <a class="no-show-link" href="/users/{{ recipe.user_id }}">{{ author }}</a></h4>
+    <div class="banner squircle">
+
+    <p id="recipe-description">{{ recipe.description }}</p>
+    </div>
+
+    <label for="Ingredients" style="font-weight:lighter; text-align:center; font-size: 175%; margin-top:3.5%;margin-bottom:2.5%;"> Ingredients</label>
+    <div class="squircle banner" id="Ingredients">
+
+    {% for ingredient in recipe.ingredients %}
+    <p>{{ loop.index }}. {{ ingredient[1] }} of {{ ingredient[0] }}</p>
+    {% endfor %}
+    </div>
+    <label for="Directions" style="font-weight:lighter; text-align:center; font-size: 175%; margin-top:3.5%;margin-bottom:2.5%;">Directions:</label>
+    <div class="squircle banner" id="Directions">
+    {% for direction in recipe.steps %}
+    <p>{{ loop.index }}. {{ direction }}</p>
+    {% endfor %}
+    </div>
+{% endblock %}

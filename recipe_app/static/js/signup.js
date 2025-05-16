@@ -1,7 +1,4 @@
 document.addEventListener('DOMContentLoaded', DOMListener());
-
-
-
 async function sha256(text) {
   const encoder = new TextEncoder();
   const data = encoder.encode(text);
@@ -12,14 +9,12 @@ async function sha256(text) {
 }
 
 function DOMListener() {
-    const form = document.getElementById('myForm')
+    const form = document.getElementById('Signup')
     form.addEventListener('submit', async function (event) {
         event.preventDefault(); // Prevent default form submission
         await processFormData(form);
     });
 }
-
-
 async function processFormData(form) {
     const fieldsToSend = ['username','email','password'];
     let data={};
@@ -29,17 +24,23 @@ async function processFormData(form) {
 
     });
     data['password'] = await sha256(data['password']);
-    console.log(JSON.stringify(data));
     sendData(data)
 }
 
 async function sendData(data){
-    let success = await fetch('/login', {
+    let response = await fetch('/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     });
-    console.log(success);
+    const responseData = await response.json();
+    if (response.status !== 303) {
+        document.getElementById('Error-Box').innerHTML = "This "+responseData['issue']+" is already in use.";
+    }
+    else{
+        window.location.href = responseData['redirectURL'];
+    }
+;
 }

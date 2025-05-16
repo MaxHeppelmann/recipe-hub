@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block head %}
+    <script src="/static/js/login.js" defer></script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="login-box" class="squircle full-page">
+        <label for="login" class="page-header">Login</label>
+        <h3 id="login-error" class="error"></h3>
+        <form id="Login">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="login_input"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="login_input"><br><br>
+            <input type="submit" value="Submit" class="squircle button">
+        </form>
+        <h3 >Don't have an account yet?<br><a class ="page-blue-link" href="/signup">Signup Here!</a></h3>
+    </div>
+{% endblock %}

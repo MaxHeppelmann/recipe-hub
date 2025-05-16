@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+    <script src="/static/js/site-wide.js" defer></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!---Google Fonts---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<div id="page-container">
+    <div id="content-wrap">
+        <div id="nav-bar">
+            <h2 class="nav-clickable-container"><a class="nav-clickable" href="/">Recipes</a></h2>
+            <h3 class="nav-clickable-container"><a class="nav-clickable" href="{{ url_for('create_recipe') }}">Create a Recipe</a></h3>
+        </div>
+        <div class="content">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+    <div id="bottom-bar">
+        <p>Contact me at <a class="no-show-link" href="mailto:maxwell.heppelmann@servitehs.org">maxwell.heppelmann@servitehs.org</a></p>
+    </div>
+</div>
+</body>
+</html>

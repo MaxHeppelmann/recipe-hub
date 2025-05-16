@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+    {{ user.username }}
+{% endblock %}
+{% block body %}
+    <h1 style="font-weight:normal; margin:1em; font-size:250%;"> {{ user.username }}</h1>
+    <h4 style="font-size:150%; margin-top: 0; padding-top:0;">Recipes:</h4>
+    <div id="recipe-container">
+        {% for recipe in recipes %}
+        <div class="recipe-box">
+            <a class="no-show-link" href="/recipes/{{ recipe.id }}"><h3 class="recipe-name">{{ recipe.name }}</h3>
+                <p class="recipe-description">{{ recipe.description }}</p></a>
+            <p class="author"><a class="no-show-link" href="/users/{{ recipe.user_id }}">By: {{ user.username }}</a></p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

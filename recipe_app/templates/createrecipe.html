@@ -1,0 +1,54 @@
+{%  extends "base.html" %}
+{% block title %}Create a Recipe{% endblock %}
+{%  block head %}
+    <script src="/static/js/createrecipe.js" defer></script>
+{% endblock %}
+{% block body %}
+    <div id="recipe-form-container" class="squircle full-page">
+        <label class="page-header">Create New Recipe</label>
+        <h3 id="Error-Box" class="error"></h3>
+        
+        <div class="recipe-container">
+            <form id="recipeForm">
+                <div class="form-group">
+                    <label for="name">Recipe Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" name="description" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Ingredients:</label>
+                    <div class="ingredient-header">
+                        <span class="ingredient-name-header">Ingredient Name</span>
+                        <span class="ingredient-amount-header">Amount</span>
+                    </div>
+                    <div id="ingredients-container" class="input-list">
+                        <div class="ingredient-item">
+                            <input type="text" class="ingredient-name" placeholder="Ingredient name" required>
+                            <input type="text" class="ingredient-amount" placeholder="Amount (e.g. 2 cups)" required>
+                            <button type="button" class="remove-btn squircle" style="display: none;">✕</button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-ingredient" class="add-btn squircle">Add Another Ingredient</button>
+                </div>
+                
+                <div class="form-group">
+                    <label>Directions:</label>
+                    <div id="directions-container" class="input-list">
+                        <div class="input-item">
+                            <input type="text" class="direction-input" placeholder="Add a direction" required>
+                            <button type="button" class="remove-btn squircle" style="display: none;">✕</button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-direction" class="add-btn squircle">Add Another Direction</button>
+                </div>
+                
+                <button type="button" id="submit-recipe" class="squircle button">Create Recipe</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

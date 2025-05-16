@@ -1,0 +1,6 @@
+include .env.example
+include LICENSE
+include README.md
+recursive-include recipe_app/static *
+recursive-include recipe_app/templates *
+recursive-include recipe_app/instance *

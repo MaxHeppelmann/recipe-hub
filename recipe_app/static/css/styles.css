@@ -1,0 +1,483 @@
+.banner {
+    width: 100%; /* Changed from 95vw to 100% to prevent overflow */
+    max-width: 100%; /* Ensure it doesn't exceed viewport width */
+    background-color: #52525a;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+
+
+
+
+
+
+.nav-clickable{
+    color: azure;
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+.nav-clickable-container{
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    margin-left:2ch;
+    margin-right:2ch;
+
+}
+#nav-bar{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    border: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #111114;
+}
+/* Fix for the content wrapper */
+.content {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Remove margin around the body */
+    background-color: #313134; /* Light gray background like Google */
+    padding-top: 30px; /* Added padding at the top to create space below nav-bar */
+    padding-bottom: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    color: azure;
+    position: relative;
+    flex: 1;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+#content-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#bottom-bar {
+    text-align: center;
+    align-items: center;
+    color: azure;
+    background-color: #11111a;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+#bottom-bar p {
+    text-align: center;
+    margin: 0;
+}
+
+.page-header{
+    text-align: center;
+    font-size: 35px;
+    line-height: 0;
+    padding-bottom: 0.25em;
+    padding-top: 0.35em;
+
+}
+
+.full-page {
+    /* More Google-like dimensions */
+    width: 450px; /* Fixed width similar to Google's login */
+    max-width: 95%; /* For mobile responsiveness */
+
+    /* Styling for a clean and modern Google-style look */
+    background-color: #1f1f1f; /* White background like Google */
+
+    border-radius: 8px; /* Google's rounded corners */
+    /*padding: 1.2% 4%; /* Consistent padding */
+
+    /* Center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto 5%; /* Added top margin to create space below nav-bar */
+    padding-bottom:0.25%;
+    padding-left:4%;
+    padding-right:4%;
+    padding-top:2%;
+}
+
+/* Fix nested selectors (they were incorrectly placed inside the .full-page block) */
+.full-page label {
+    margin: 0.5em 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.login_input {
+    width: 95%;
+    padding: 10px;
+    margin: 0;
+    border: 2.5px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: azure; /*text background color */
+}
+
+/* Squircle shape class that can be applied to any element */
+.squircle {
+    border-radius: 8px; /* Google's rounded corners */
+    border: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    line-height: 2.5em;
+    margin: auto;
+}
+
+.button {
+    background-color: #525252; /* Google blue */
+    color: azure;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0.25em 2ch;
+    height: 3em;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #6f6f6f; /* Darker blue on hover */
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100%; /* Full height */
+}
+
+/* Simple Pill-Shaped Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+    background-color: #272729; /* Track color */
+    transition: all 0.3s ease;
+    :hover {
+        width: 20px
+    }
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999999; /* Thumb color */
+    border-radius: 8px; /* Exactly half of width for perfect pill shape */
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa; /* Slightly lighter on hover */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+    display: none; /* Hide the arrows at top and bottom */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #999999 #272729; /* thumb and track color */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #999999 #272729; /* thumb and track color */
+}
+
+body {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: lighter;
+    margin: 0; /* Remove margin around the body */
+    width: 100%; /* Ensure body takes exactly 100% width */
+    background-color: #313134; /* Light gray background like Google */
+    padding: 0;
+    color: azure;
+    overflow-y: auto;
+    min-height: 100vh; /* Ensure it covers viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Firefox support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #999999 #272729;
+}
+    
+#bottom-bar {
+    margin-top: auto; /* Push to bottom */
+    align-items: center;
+    align-content: center;
+    background-color: #11111a;
+    padding: 15px 0;
+    width: 100%;
+}
+    
+    .banner {
+    width: 95vw;
+    background-color: #17171a;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+.page-blue-link {
+    color: #1a73e8; /* Google blue */
+    margin-top: 1em;
+    text-decoration: none;
+    margin-bottom: 0;
+    font-weight: lighter;
+    transition: all 0.3s ease;
+
+}
+.full-page h3 {
+    padding-bottom: 0.15em;
+    font-weight: lighter;
+}
+.page-blue-link:hover {
+    color: #388bff; /* Darker blue on hover */
+    text-decoration: underline;
+    font-weight: normal;
+}
+.error {
+    padding: 0;
+    margin: 0;
+    color: red;
+    font-weight: normal;
+}
+
+/* Create Recipe Styles */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 2.5px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: azure;
+}
+
+.input-list {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.input-item {
+    display: flex;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.input-item input {
+    flex-grow: 1;
+    margin-right: 5px;
+    padding: 10px;
+    border: 2.5px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: azure;
+}
+
+.ingredient-item {
+    display: flex;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.ingredient-name {
+    flex: 1.5;
+    margin-right: 5px;
+    padding: 10px;
+    border: 2.5px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: azure;
+}
+
+.ingredient-amount {
+    flex: 1;
+    margin-right: 5px;
+    padding: 10px;
+    border: 2.5px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: azure;
+}
+
+.ingredient-header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.ingredient-name-header {
+    flex: 1.5;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+
+.ingredient-amount-header {
+    flex: 1;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+
+.input-item button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.add-btn {
+    background-color: #525252;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #6f6f6f;
+}
+
+#recipeForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Recipe display styling */
+#recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 1em auto 2em auto;
+    position: relative;
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Style for recipe links */
+.no-show-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-box {
+    background-color: #1f1f1f;
+    border-radius: 24px; /* More rounded for squircle effect */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Fixed height for consistent boxes */
+    justify-content: space-between; /* Space elements evenly */
+}
+
+
+
+.recipe-name {
+    color: azure;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px; /* Fixed height for 1 line */
+}
+
+.recipe-description {
+    color: #dddddd;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 90px; /* Fixed height for 4 lines of text */
+}
+
+.author {
+    color: #999999;
+    font-size: 14px;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px; /* Fixed height for 1 line */
+    margin-top: 10px;
+}
