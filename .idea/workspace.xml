@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="585b3940-113a-4dbc-8480-2cd2106f8121" name="Changes" comment="added stuff to gitignore">
+    <list default="true" id="585b3940-113a-4dbc-8480-2cd2106f8121" name="Changes" comment="repaired git history">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,34 +63,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Flask server.CompSciHW.executor": "Run",
-    "Flask server.Flask (app.py).executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.login.js.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/ubuntu/flask-tutorial",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Flask server.CompSciHW.executor&quot;: &quot;Run&quot;,
+    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.login.js.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ubuntu/flask-tutorial&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Merge Requests" />
@@ -98,19 +98,19 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19945355" />
-      <window_info id="Commit" order="1" weight="0.19945355" />
+      <window_info id="Commit" order="1" weight="0.19946289" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.15027322" />
       <window_info id="Bookmarks" order="3" side_tool="true" weight="0.28610462" />
-      <window_info id="Learn" order="5" side_tool="true" weight="0.28610462" />
+      <window_info id="Learn" order="4" side_tool="true" weight="0.28610462" />
       <window_info anchor="bottom" id="NextEditPredictionSettingsToolwindow" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="HfCacheToolWindow" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.33001328" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.33016306" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.33001328" />
-      <window_info active="true" anchor="bottom" x="85" y="81" width="1103" height="645" id="Terminal" order="3" type="WINDOWED" visible="true" weight="0.33001328" />
+      <window_info anchor="bottom" x="99" y="81" width="1075" height="631" id="Terminal" order="3" type="WINDOWED" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.25830013" />
       <window_info anchor="bottom" id="Python Packages" order="5" weight="0.24501993" />
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
@@ -122,8 +122,8 @@
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.24731445" />
-      <window_info active="true" anchor="right" x="597" y="43" width="533" height="697" id="AIAssistant" order="1" visible="true" weight="0.32982045" />
-      <window_info anchor="right" id="Database" order="2" weight="0.32982045" />
+      <window_info anchor="right" x="597" y="43" width="533" height="697" id="AIAssistant" order="1" weight="0.4258392" />
+      <window_info anchor="right" id="Database" order="2" weight="0.4258392" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Plots" order="5" />
@@ -214,6 +214,7 @@
       <workItem from="1747085930829" duration="29504000" />
       <workItem from="1747329663598" duration="4543000" />
       <workItem from="1747416043665" duration="6749000" />
+      <workItem from="1747689093777" duration="1064000" />
     </task>
     <task id="LOCAL-00001" summary="Got JS working">
       <option name="closed" value="true" />
@@ -287,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747430011615</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="repaired git history">
+      <option name="closed" value="true" />
+      <created>1747432363073</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747432363073</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +313,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="heroku/main" />
                       </list>
                     </value>
                   </entry>
@@ -325,7 +334,8 @@
     <MESSAGE value="license is deleted so that it cannot conflict with github remote" />
     <MESSAGE value="Merge branch 'main' of https://github.com/MaxHeppelmann/recipe-hub&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;merge is necessary in order to push repo up to github" />
     <MESSAGE value="added stuff to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added stuff to gitignore" />
+    <MESSAGE value="repaired git history" />
+    <option name="LAST_COMMIT_MESSAGE" value="repaired git history" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CompSciHW$CompSciHW.coverage" NAME="CompSciHW Coverage Results" MODIFIED="1747249600704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
