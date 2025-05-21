@@ -14,7 +14,8 @@
     position: relative;
     display: inline-block;
     width: 95%;
-    margin-left:0;
+    padding-left:0;
+
 }
 
 .password-container input {
