@@ -13,7 +13,8 @@
 .password-container {
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 95%;
+    margin-left:0;
 }
 
 .password-container input {
