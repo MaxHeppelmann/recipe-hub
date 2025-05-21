@@ -12,13 +12,15 @@
 /* Password visibility toggle styles */
 .password-container {
     position: relative;
-    display: inline-block;
-    width: 95%;
-    margin-left:0;
+    display: block;  /* Changed from inline-block to block */
+    width: 95%;      /* Match the width of other inputs */
+    margin: 0;       /* Remove any margin that might affect alignment */
 }
 
-.password-container input {
-    width: 100%;
+.password-container .login_input {
+    width: 100%;     /* Make the input take full width of container */
+    margin: 0;       /* Ensure no margins affect alignment */
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .toggle-password {
@@ -33,12 +35,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;      /* Ensure button appears above input */
 }
 
 .toggle-password img {
     width: 24px;
     height: 24px;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .toggle-password:hover img {
