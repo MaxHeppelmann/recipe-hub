@@ -15,13 +15,13 @@
     <div class="squircle banner" id="Ingredients">
 
     {% for ingredient in recipe.ingredients %}
-    <p>{{ loop.index }}. {{ ingredient[1] }} of {{ ingredient[0] }}</p>
+    <p>{{ loop.index }}.   {{ ingredient[1] }} of {{ ingredient[0] }}</p>
     {% endfor %}
     </div>
     <label for="Directions" style="font-weight:lighter; text-align:center; font-size: 175%; margin-top:3.5%;margin-bottom:2.5%;">Directions:</label>
     <div class="squircle banner" id="Directions">
     {% for direction in recipe.steps %}
-    <p>{{ loop.index }}. {{ direction }}</p>
+    <p>{{ loop.index }}.   {{ direction }}</p>
     {% endfor %}
     </div>
 {% endblock %}
