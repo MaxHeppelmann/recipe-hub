@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ url_for('static/icons', filename='favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
 </head>
 <body>
 <div id="page-container">
     <div id="content-wrap">
         <div id="nav-bar">
-            <img src="{{ url_for('static/icons',filename='favicon.ico') }}" alt="Recipe-Hub" width="35" height="35" style="padding-left:20px">
+            <img src="{{ url_for('static',filename='icons/favicon.ico') }}" alt="Recipe-Hub" width="35" height="35" style="padding-left:20px">
             <h2 class="nav-clickable-container"><a class="nav-clickable" href="/">Recipes</a></h2>
             <h3 class="nav-clickable-container"><a class="nav-clickable" href="{{ url_for('create_recipe') }}">Create a Recipe</a></h3>
         </div>

@@ -19,7 +19,7 @@
             <div class="password-container">
                 <input type="password" id="password" name="password" class="login_input">
                 <button type="button" class="toggle-password" tabindex="-1">
-                    <img src="/static/icons/eye-24.ico" alt="Show/Hide Password">
+                    <img src="{{ url_for('static',filename='icons/eye-24.ico') }}" alt="Show/Hide Password">
                 </button>
             </div><br><br>
             <input type="submit" value="Submit" class="squircle button">
