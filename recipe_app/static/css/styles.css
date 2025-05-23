@@ -28,24 +28,32 @@
 /* Input styling */
 /* Input styling */
 /* Make sure all inputs have consistent styling */
-.login_input {
-    width: 95%;
+/* Restore username field to original width */
+#username.login_input {
+    width: 95%; /* Original width */
     box-sizing: border-box;
-    /* Maintain other existing styles */
 }
 
-/* Override any specific styling for the password field */
-#password.login_input {
-    width: 100%; /* This ensures it takes full width of its container */
+/* Make sure email field also uses original width */
+#email.login_input {
+    width: 95%; /* Original width */
+    box-sizing: border-box;
 }
 
-/* Make the password container match the exact width of other inputs */
+/* Make password container match the width of regular inputs */
 .password-container {
     position: relative;
-    width: 95%; /* Exactly match the width of regular inputs */
+    width: 95%; /* Match the username's original width */
     box-sizing: border-box;
     margin: 0 auto;
     display: block;
+}
+
+/* Ensure the password input takes the full width of its container */
+#password.login_input {
+    width: 100%; /* Full width of container */
+    box-sizing: border-box;
+    padding-right: 40px; /* Space for the toggle button */
 }
 
 /* Position the toggle button without affecting input width */
@@ -58,9 +66,6 @@
     border: none;
     cursor: pointer;
     z-index: 2;
-    /* Make sure this doesn't affect the input's width */
-    margin: 0;
-    padding: 0;
 }
 
 .toggle-password img {
