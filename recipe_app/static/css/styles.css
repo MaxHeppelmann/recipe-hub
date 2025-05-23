@@ -26,6 +26,7 @@
 }
 
 /* Input styling */
+/* Input styling */
 .login_input {
     width: 95%;
     /* Maintain other existing styles */
@@ -34,16 +35,16 @@
 /* Password container */
 .password-container {
     position: relative;
-    width: 95%;
+    width: 95%; /* Match the width percentage of regular inputs */
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    display: block; /* Changed from flex to block */
 }
 
 .password-container .login_input {
-    width: 100%;
+    width: 100%; /* Take full width of container */
     margin: 0;
     box-sizing: border-box;
+    padding-right: 40px; /* Add padding to make room for the eye icon */
 }
 
 .toggle-password {
