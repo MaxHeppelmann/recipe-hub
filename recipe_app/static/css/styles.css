@@ -27,26 +27,28 @@
 
 /* Input styling */
 /* Input styling */
+/* Make sure all inputs have consistent styling */
 .login_input {
     width: 95%;
+    box-sizing: border-box;
     /* Maintain other existing styles */
 }
 
-/* Password container */
+/* Override any specific styling for the password field */
+#password.login_input {
+    width: 100%; /* This ensures it takes full width of its container */
+}
+
+/* Make the password container match the exact width of other inputs */
 .password-container {
     position: relative;
-    width: 95%; /* Match the width percentage of regular inputs */
-    margin: 0 auto;
-    display: block; /* Changed from flex to block */
-}
-
-.password-container .login_input {
-    width: 100%; /* Take full width of container */
-    margin: 0;
+    width: 95%; /* Exactly match the width of regular inputs */
     box-sizing: border-box;
-    padding-right: 40px; /* Add padding to make room for the eye icon */
+    margin: 0 auto;
+    display: block;
 }
 
+/* Position the toggle button without affecting input width */
 .toggle-password {
     position: absolute;
     right: 10px;
@@ -56,6 +58,9 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+    /* Make sure this doesn't affect the input's width */
+    margin: 0;
+    padding: 0;
 }
 
 .toggle-password img {
