@@ -9,18 +9,41 @@
 
 
 
-/* Password visibility toggle styles */
+/* Login box styling */
+#login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Maintain other existing styles */
+}
+
+/* Form styling */
+#Login, #Signup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input styling */
+.login_input {
+    width: 95%;
+    /* Maintain other existing styles */
+}
+
+/* Password container */
 .password-container {
     position: relative;
-    display: block;  /* Changed from inline-block to block */
-    width: 95%;      /* Match the width of other inputs */
-    margin: 0;       /* Remove any margin that might affect alignment */
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .password-container .login_input {
-    width: 100%;     /* Make the input take full width of container */
-    margin: 0;       /* Ensure no margins affect alignment */
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .toggle-password {
@@ -28,14 +51,10 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    border: none;
     background: transparent;
+    border: none;
     cursor: pointer;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;      /* Ensure button appears above input */
+    z-index: 2;
 }
 
 .toggle-password img {
